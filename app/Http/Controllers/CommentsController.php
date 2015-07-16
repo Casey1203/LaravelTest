@@ -20,6 +20,6 @@ class CommentsController extends Controller
 
         $comment->save();
 
-        return Redirect::back()->with('status', 'Your comment has been created!');
+        return redirect()->back()->with('status', 'Your comment has been created!');
     }
 }
