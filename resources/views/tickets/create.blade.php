@@ -6,9 +6,9 @@
         <div class="well well bs-component">
             <form class="form-horizontal" method="post">
             	<input type="hidden" name="_token" value="{!! csrf_token() !!}">
-	            <!-- @foreach ($errors->all() as $error)
+	            @foreach ($errors->all() as $error)
 	                <p class="alert alert-danger">{{ $error }}</p>
-	            @endforeach -->
+	            @endforeach
 
 	            @if (session('status'))
 	                <div class="alert alert-success">
@@ -26,7 +26,7 @@
                     <div class="form-group">
                         <label for="content" class="col-lg-2 control-label">Content</label>
                         <div class="col-lg-10">
-                            <textarea class="form-control" rows="3" id="content"></textarea>
+                            <textarea class="form-control" rows="3" id="content" name="content"></textarea>
                             <span class="help-block">Feel free to ask us any question.</span>
                         </div>
                     </div>
